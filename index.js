@@ -3,6 +3,7 @@ const morgan = require('morgan')
 const app = express()
 app.use(express.json())
 app.use(morgan('tiny'))
+app.use(express.static('dist'))
 
 let persons = [
         {
@@ -64,7 +65,12 @@ let persons = [
             "id": "0987",
             "name": "Uusin nimi",
             "number": "044 259"
-        }
+        },
+        {
+          "id": "1111",
+          "name": "Jos näet tämän niin nimet tulevat backendistä",
+          "number": "123 456 789"
+      }
 ]
 
 app.get('/api/persons', (request, response) => {
@@ -120,7 +126,7 @@ app.get('/info', (request, response) => {
 })
 
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
