@@ -11,16 +11,7 @@ let persons = [
           "number": "39-23-6423122",
           "id": "4"
         },
-        {
-          "id": "f0a4",
-          "name": "Valdemaar Suomalainen",
-          "number": "9876543456"
-        },
-        {
-          "id": "493b",
-          "name": "Osmanderi Savolainen",
-          "number": "123"
-        },
+        
         {
           "id": "54bf",
           "name": "LISSÄÄ",
@@ -64,7 +55,7 @@ let persons = [
         {
             "id": "0987",
             "name": "Uusin nimi",
-            "number": "044 259"
+            "number": "044"
         },
         {
           "id": "1111",
